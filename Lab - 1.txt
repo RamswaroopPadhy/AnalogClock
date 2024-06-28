@@ -1,0 +1,19 @@
+Scripting need to pasted in the advanced section while creating the instance.
+
+#!/bin/bash
+yum install httpd -y
+echo "This server is running in the AWS cloud." >> /var/www/html/index.html
+systemctl start httpd
+systemctl enable httpd
+useradd name -p redhat -c "name"
+
+
+Commands to execute in the terminal –
+lsblk
+mkdir /disk
+mkfs.ext4 /dev/xvdb
+mount /dev/xvdb /disk/
+df -h
+cd /disk
+touch training.txt{1..10}
+ll
